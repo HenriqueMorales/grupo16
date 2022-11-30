@@ -26,7 +26,7 @@ function App() {
       const { data } = await axios.get(
         `https://grupo16-pbd.herokuapp.com/api/get/${getTable}`
       );
-      setData((prevValue) => data);
+      setData((prevValue) => Array.from(data));
     } catch (error) {
       console.log(error);
       alert(error.message);
@@ -46,7 +46,7 @@ function App() {
           value6: value6,
         }
       );
-      setData((prevValue) => data);
+      setData((prevValue) => Array.from(data));
     } catch (error) {
       console.log(error);
       alert(error.message);
@@ -58,7 +58,7 @@ function App() {
       const { data } = await axios.delete(
         `https://grupo16-pbd.herokuapp.com/delete/${deleteTable}/${deleteTableId}`
       );
-      setData((prevValue) => data);
+      setData((prevValue) => Array.from(data));
     } catch (error) {
       console.log(error);
       alert(error.message);
@@ -70,7 +70,7 @@ function App() {
       const { data } = await axios.get(
         `https://grupo16-pbd.herokuapp.com/api/${query}`
       );
-      setData((prevValue) => data);
+      setData((prevValue) => Array.from(data));
     } catch (error) {
       console.log(error);
       alert(error.message);
