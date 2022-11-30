@@ -29,6 +29,7 @@ const Post = ({
         <div>
           <label>CPF:</label>
           <input
+            required
             type="number"
             maxLength={11}
             onChange={(e) => {
@@ -38,6 +39,7 @@ const Post = ({
 
           <label>Nome:</label>
           <input
+            required
             type="text"
             maxLength={30}
             onChange={(e) => {
@@ -47,6 +49,7 @@ const Post = ({
 
           <label>email:</label>
           <input
+            required
             type="text"
             maxLength={50}
             onChange={(e) => {
@@ -56,6 +59,7 @@ const Post = ({
 
           <label>Senha:</label>
           <input
+            required
             type="text"
             maxLength={30}
             onChange={(e) => {
@@ -65,6 +69,7 @@ const Post = ({
 
           <label>DataNasc:</label>
           <input
+            required
             type="date"
             onChange={(e) => {
               setValue5(e.target.value);
@@ -73,6 +78,7 @@ const Post = ({
 
           <label>Endereço:</label>
           <input
+            required
             type="text"
             maxLength={50}
             onChange={(e) => {
@@ -86,6 +92,7 @@ const Post = ({
         <div>
           <label>codVend:</label>
           <input
+            required
             type="number"
             maxLength={5}
             onChange={(e) => {
@@ -95,6 +102,7 @@ const Post = ({
 
           <label>CPF:</label>
           <input
+            required
             type="number"
             maxLength={11}
             onChange={(e) => {
@@ -108,6 +116,7 @@ const Post = ({
         <div>
           <label>CPF:</label>
           <input
+            required
             type="number"
             maxLength={11}
             onChange={(e) => {
@@ -117,6 +126,7 @@ const Post = ({
 
           <label>numTelefone:</label>
           <input
+            required
             type="number"
             maxLength={15}
             onChange={(e) => {
@@ -130,6 +140,7 @@ const Post = ({
         <div>
           <label>idProduto:</label>
           <input
+            required
             type="number"
             maxLength={5}
             onChange={(e) => {
@@ -139,6 +150,7 @@ const Post = ({
 
           <label>codVend:</label>
           <input
+            required
             type="number"
             maxLength={5}
             onChange={(e) => {
@@ -148,6 +160,7 @@ const Post = ({
 
           <label>nomeProd:</label>
           <input
+            required
             type="text"
             maxLength={20}
             onChange={(e) => {
@@ -157,6 +170,7 @@ const Post = ({
 
           <label>valorProd:</label>
           <input
+            required
             type="number"
             maxLength={10}
             onChange={(e) => {
@@ -170,6 +184,7 @@ const Post = ({
         <div>
           <label>idCarrinho:</label>
           <input
+            required
             type="number"
             maxLength={5}
             onChange={(e) => {
@@ -179,6 +194,7 @@ const Post = ({
 
           <label>valorCarrinho:</label>
           <input
+            required
             type="number"
             maxLength={10}
             onChange={(e) => {
@@ -188,6 +204,7 @@ const Post = ({
 
           <label>CPF:</label>
           <input
+            required
             type="number"
             maxLength={11}
             onChange={(e) => {
@@ -201,6 +218,7 @@ const Post = ({
         <div>
           <label>nomeProd:</label>
           <input
+            required
             type="text"
             maxLength={20}
             onChange={(e) => {
@@ -210,6 +228,7 @@ const Post = ({
 
           <label>idProduto:</label>
           <input
+            required
             type="number"
             maxLength={5}
             onChange={(e) => {
@@ -219,6 +238,7 @@ const Post = ({
 
           <label>idCarrinho:</label>
           <input
+            required
             type="number"
             maxLength={5}
             onChange={(e) => {
@@ -232,6 +252,7 @@ const Post = ({
         <div>
           <label>numPedido:</label>
           <input
+            required
             type="number"
             maxLength={5}
             onChange={(e) => {
@@ -241,6 +262,7 @@ const Post = ({
 
           <label>enderecoEntrega:</label>
           <input
+            required
             type="number"
             maxLength={10}
             onChange={(e) => {
@@ -251,6 +273,7 @@ const Post = ({
           <label className="label-compra">
             PIX:
             <input
+              checked
               type="radio"
               name="formaDePag"
               value="PIX"
