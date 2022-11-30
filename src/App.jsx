@@ -110,18 +110,19 @@ function App() {
 
       <section>
         <h2>Dados:</h2>
-        {data.map((table) =>
-          Object.entries(table).map(([key, value]) => {
-            return (
-              <div key={key}>
-                {console.log("Chave: " + key)}
-                {console.log("Valor: " + table[key])}
-                <p>Chave: {key}</p>
-                <p>Valor: {value}</p>
-              </div>
-            );
-          })
-        )}
+        {typeof data !== undefined &&
+          data.map((table) =>
+            Object.entries(table).map(([key, value]) => {
+              return (
+                <div key={key}>
+                  {console.log("Chave: " + key)}
+                  {console.log("Valor: " + table[key])}
+                  <p>Chave: {key}</p>
+                  <p>Valor: {value}</p>
+                </div>
+              );
+            })
+          )}
       </section>
 
       <form className="form-query" onSubmit={handleQuerySubmit}>
