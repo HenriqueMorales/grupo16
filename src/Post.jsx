@@ -56,7 +56,7 @@ const Post = ({
 
           <label>Senha:</label>
           <input
-            type="password"
+            type="text"
             maxLength={30}
             onChange={(e) => {
               setValue4(e.target.value);
