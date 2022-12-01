@@ -263,7 +263,7 @@ const Post = ({
           <label>enderecoEntrega:</label>
           <input
             required
-            type="number"
+            type="text"
             maxLength={10}
             onChange={(e) => {
               setValue2(e.target.value);

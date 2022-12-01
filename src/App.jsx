@@ -56,7 +56,7 @@ function App() {
   const handleDelete = async () => {
     try {
       const { data } = await axios.delete(
-        `https://grupo16-pbd.herokuapp.com/delete/${deleteTable}/${deleteTableId}`
+        `https://grupo16-pbd.herokuapp.com/api/delete/${deleteTable}/${deleteTableId}`
       );
       setData((prevValue) => Array.from(data));
     } catch (error) {
