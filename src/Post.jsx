@@ -264,7 +264,7 @@ const Post = ({
           <input
             required
             type="text"
-            maxLength={10}
+            maxLength={50}
             onChange={(e) => {
               setValue2(e.target.value);
             }}
@@ -298,7 +298,7 @@ const Post = ({
           <input
             required
             type="number"
-            maxLength={5}
+            maxLength={10}
             onChange={(e) => {
               setValue4(e.target.value);
             }}
@@ -318,7 +318,7 @@ const Post = ({
           <input
             required
             type="number"
-            maxLength={5}
+            maxLength={11}
             onChange={(e) => {
               setValue6(e.target.value);
             }}
