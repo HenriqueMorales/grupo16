@@ -289,10 +289,40 @@ const Post = ({
               name="formaDePag"
               value="CARTAO"
               onChange={(e) => {
-                setValue4(e.target.value);
+                setValue3(e.target.value);
               }}
             />
           </label>
+
+          <label>valorTotal:</label>
+          <input
+            required
+            type="number"
+            maxLength={5}
+            onChange={(e) => {
+              setValue4(e.target.value);
+            }}
+          />
+
+          <label>idCarrinho:</label>
+          <input
+            required
+            type="number"
+            maxLength={5}
+            onChange={(e) => {
+              setValue5(e.target.value);
+            }}
+          />
+
+          <label>CPF:</label>
+          <input
+            required
+            type="number"
+            maxLength={5}
+            onChange={(e) => {
+              setValue6(e.target.value);
+            }}
+          />
         </div>
       )}
 
